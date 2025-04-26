@@ -146,4 +146,56 @@ def solicitar_senha():
       print(" -> pelo menos um número")
       print(" -> pelo menos um caractere especial (!@#$%&*)")
       return solicitar_senha()
-   
+
+def escolher_unidade():
+   print("Escolha a unidade: ")   
+   print("1 - Celsius")
+   print("2 - Fahrenheit")
+   print("3 - Kelvin")
+   opcao = input()
+
+   if opcao == "1":
+      return "Celsius"
+   if opcao == "2":
+      return "Fahrenheit"
+   if opcao == "3":
+      return "Kelvin"
+   else: 
+       print("Opção inválida. Tente novamente.")
+       return escolher_unidade()
+
+def ler_temperatura(unidade_origem):
+   print(f"Digite a temperatura em " + unidade_origem + ":")    
+   entrada =  input()
+   try:
+      return float(entrada)
+   except ValueError:
+      print("Entrada inválida! Digite um número válido.")
+      return ler_temperatura(unidade_origem) 
+
+def exibir_resultado(resultado, unidade_destino):
+
+   print(f"\nResultado: {resultado:.2f} {unidade_destino}")  
+
+def ler_lado(nome):
+   print("Digite o lado " + nome + ":")
+   entrada = input()
+   try:
+      valor = float(entrada)
+      if valor <= 0:
+         print("O lado deve ser maior que zero.")
+         return ler_lado(nome)
+      return valor
+   except ValueError:
+      print("Entrada inválida! Digite um número válido")
+      return ler_lado(nome)
+
+def exibir_resultado(tipo_lados, tipo_angulos, perimetro, area):
+   print("Classificação por lados: " + tipo_lados)
+   print("Classificação por ângulos: " + tipo_angulos)
+   print("Perímetro: " + str(round(perimetro, 2)))
+   print("Área: " + str(round(area, 2)))   
+
+def exibir_mensagem_erro():
+   print("Os lados não formam um triângulo")
+

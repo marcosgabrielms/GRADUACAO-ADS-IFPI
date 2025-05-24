@@ -16,6 +16,7 @@ def main():
         sexo = ler_sexo()
         if sexo not in ("M", "F"):
             break
+
         nota = ler_nota()
 
         total_alunos += 1
@@ -34,7 +35,7 @@ def main():
             soma_mulheres += nota
     
     media_geral = soma_geral / total_alunos if total_alunos else 0
-    media_homens =  soma_homens / total_homens if total_homens else 0
+    media_homens = soma_homens / total_homens if total_homens else 0
     media_mulheres = soma_mulheres / total_mulheres if total_mulheres else 0
 
     print("\n=== RESULTADOS ===")

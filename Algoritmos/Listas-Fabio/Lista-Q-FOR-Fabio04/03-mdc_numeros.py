@@ -2,13 +2,13 @@ def main():
     n1 = int(input("Digite o primeiro número: "))
     n2 = int(input("Digite o segundo número: "))
 
-    original_n1 = n1
-    original_n2 = n2
+    menor = min(n1, n2)  # pega o menor entre n1 e n2
+    mdc = 1  # começa assumindo que o MDC mínimo é 1
 
-    while n2 != 0:
-        n1, n2 = n2, n1 % n2
+    for i in range(1, menor + 1, 1):  # start=1, limit=menor+1, step=1
+        if n1 % i == 0 and n2 % i == 0:
+            mdc = i  # atualiza o MDC se i divide os dois
 
-    print(f"O MDC de {original_n1} e {original_n2} é: {n1}")
+    print(f"O MDC de {n1} e {n2} é: {mdc}")
 
-
-main ()
+main()

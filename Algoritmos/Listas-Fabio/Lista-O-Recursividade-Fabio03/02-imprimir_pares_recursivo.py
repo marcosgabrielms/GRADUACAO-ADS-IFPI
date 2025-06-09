@@ -8,5 +8,5 @@ def imprimir_pares(n):
 print("Digite um número inteiro positivo maior que 1: ")
 n = int(input())
 
-print(f"Números pares de 1 até {n}")
+print(f" Números pares de 1 até {n}")
 imprimir_pares(n)

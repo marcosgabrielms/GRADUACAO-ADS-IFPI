@@ -1,17 +1,17 @@
 /* --- Estilos Gerais --- */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: #f4f7f6;
+    background-color: #f4f7f6; /* Fundo cinza claro para a página inteira */
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
 }
 
-/* --- Container e Layout --- */
-/* Para centralizar o conteúdo em telas maiores */
-body {
-    max-width: 800px;
+/* --- Container Principal --- */
+/* Estilo que antes estava no body, agora em uma classe para centralizar o conteúdo */
+.container-geral {
+    max-width: 1200px; /* Aumentei a largura para acomodar as duas colunas */
     margin: 40px auto;
     padding: 20px 40px;
     background-color: #ffffff;
@@ -19,12 +19,26 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* --- NOVO: Layout Horizontal com Flexbox --- */
+.layout-horizontal {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Distribui o espaço entre as colunas */
+    align-items: flex-start; /* Alinha as colunas no topo */
+    gap: 40px; /* Espaço moderno e consistente entre as colunas */
+}
+
+.coluna {
+    flex: 1; /* Faz com que cada coluna ocupe uma parte igual do espaço */
+    min-width: 0; /* Ajuda a evitar que o conteúdo flexível transborde */
+}
+
 /* --- Títulos --- */
 h1, h2 {
     color: #2c3e50;
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 20px; /* Ajuste na margem para o novo layout */
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -32,20 +46,22 @@ h1 {
     font-size: 2.5em;
     color: #3498db;
     border-bottom: 2px solid #3498db;
+    margin-top: 0; /* Remove a margem superior do H1 principal */
 }
 
 h2 {
     font-size: 1.8em;
+    margin-top: 0; /* Remove margem superior dos H2 dentro das colunas */
 }
 
-/* --- Inputs e Botões --- */
+/* --- Inputs e Botões (Sem alterações, já funcionam a 100% da coluna) --- */
 input[type="text"], input[placeholder] {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    box-sizing: border-box;
     font-size: 1em;
 }
 
@@ -73,10 +89,10 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* --- Estilo da Tabela --- */
+/* --- Estilo da Tabela (Sem alterações) --- */
 table {
     width: 100%;
-    border-collapse: collapse; /* Une as bordas das células */
+    border-collapse: collapse;
     margin-top: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -93,7 +109,6 @@ th {
     font-weight: bold;
 }
 
-/* Efeito "zebra" para melhor legibilidade */
 tr:nth-child(even) {
     background-color: #f8f9fa;
 }
@@ -102,13 +117,13 @@ tr:hover {
     background-color: #e9ecef;
 }
 
-/* --- Divisões de Resultado --- */
+/* --- Divisões de Resultado (Sem alterações) --- */
 #resultado, #resultado1, #resultado2 {
     margin-top: 20px;
     padding: 15px;
     background-color: #eef1f2;
     border-left: 5px solid #3498db;
     border-radius: 5px;
-    min-height: 30px; /* Garante que a div seja visível mesmo vazia */
-    word-wrap: break-word; /* Evita que texto longo quebre o layout */
+    min-height: 30px;
+    word-wrap: break-word;
 }

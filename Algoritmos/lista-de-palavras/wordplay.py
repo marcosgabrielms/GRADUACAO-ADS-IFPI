@@ -21,7 +21,7 @@ def main():
 
 def mostrar_palavras_por_tamanho():
   tamanho = int(input('Qual tamanho min das palavras: '))
-  arquivo = open('br-sem-acentos.txt')
+  arquivo = open('Algoritmos/lista-de-palavras/br-sem-acentos.txt')
   contador = 0
   contador_filtro = 0
   for linha in arquivo:

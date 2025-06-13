@@ -22,7 +22,7 @@ Este espaço foi criado para armazenar e acompanhar a evolução dos estudos em 
 
 Atualmente, todo o desenvolvimento deste repositório é feito utilizando:
 
-- **Python** 🐍 (Algoritmos e Programção)
+- **Python** 🐍 (Disciplina: Algoritmos)
 
 ---
 

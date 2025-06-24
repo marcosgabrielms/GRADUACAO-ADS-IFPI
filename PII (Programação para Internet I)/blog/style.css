@@ -1,0 +1,146 @@
+/* style.css */
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna no body */
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* NOVO: Estilo para o contêiner que agrupará as duas seções lado a lado */
+.main-content-container {
+    display: flex; /* Habilita o Flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas pequenas */
+    justify-content: center; /* Centraliza as divs horizontalmente */
+    gap: 30px; /* Espaçamento entre as divs */
+    width: 100%;
+    max-width: 1200px; /* Largura máxima para o contêiner */
+    margin-top: 20px; /* Espaçamento do topo */
+}
+
+/* Estilos para cada seção (card) */
+.advice-section,
+.country-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    flex: 1; /* Faz com que as divs ocupem o espaço disponível igualmente */
+    min-width: 300px; /* Largura mínima para evitar que fiquem muito apertadas */
+    max-width: 500px; /* Largura máxima para cada card */
+    display: flex; /* Flexbox para organizar o conteúdo interno de cada card */
+    flex-direction: column;
+    justify-content: space-between; /* Espaçamento entre os elementos dentro do card */
+}
+
+/* Estilos para subtítulos dentro das seções */
+.advice-section h2,
+.country-section h2 {
+    color: #34495e;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Estilos para botões */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px; /* Espaçamento abaixo do botão */
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #1a5276;
+    transform: translateY(0);
+}
+
+/* Estilos para inputs */
+input {
+    width: calc(100% - 20px); /* Ocupa quase 100% da largura, descontando padding */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaçamento abaixo do input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Estilos para a imagem da bandeira */
+#bandeira {
+    max-width: 100px; /* Tamanho razoável para a bandeira */
+    height: auto;
+    margin: 15px auto; /* Centraliza e adiciona margem */
+    display: block; /* Garante que a margem auto funcione */
+    border: 1px solid #eee; /* Borda leve para a imagem */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilos para o parágrafo de conselho */
+p#conselho {
+    font-size: 1.4em;
+    font-style: italic;
+    color: #555;
+    min-height: 40px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Estilos para o parágrafo de nome oficial do país */
+p#nomeOficial {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilos para mensagens de erro */
+p#erroConselho,
+p#erroPais {
+    color: #e74c3c;
+    font-weight: bold;
+    min-height: 20px;
+    margin-top: 15px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .main-content-container {
+        flex-direction: column; /* Em telas menores, as divs ficam uma abaixo da outra */
+        align-items: center;
+    }
+
+    .advice-section,
+    .country-section {
+        width: 90%; /* Ocupa mais largura em telas menores */
+        max-width: none; /* Remove a largura máxima */
+    }
+}

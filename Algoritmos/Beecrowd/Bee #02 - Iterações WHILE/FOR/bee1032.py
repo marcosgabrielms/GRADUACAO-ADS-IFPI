@@ -16,6 +16,7 @@ def eh_primo(n):
     return True
 
 def josephus_primo(n):
+    
     pessoas = list(range(1, n + 1))
     primos = gerar_primos(n)
     indice = 0

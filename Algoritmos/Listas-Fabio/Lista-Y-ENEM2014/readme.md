@@ -1,6 +1,6 @@
 # Análise de Dados do ENEM
 
-Este projeto foi desenvolvido para realizar a leitura, processamento e consulta de dados do Exame Nacional do Ensino Médio (ENEM). O sistema é composto por um arquivo principal que orquestra as operações, utilizando módulos de utilidades para interagir com os arquivos de dados.
+Esta atividade foi desenvolvida para realizar a leitura, processamento e consulta de dados do Exame Nacional do Ensino Médio (ENEM). O sistema é composto por um arquivo principal que orquestra as operações, utilizando módulos de utilidades para interagir com os arquivos de dados.
 
 ## 🎯 Objetivo
 

@@ -1,9 +1,9 @@
 # Exercício 01 (Extra) - Programação Orientada a Objetos
 
-> [cite_start]**Instituição:** Instituto Federal de Educação, Ciência e Tecnologia do Piauí (IFPI) 
-> [cite_start]**Curso:** Análise e Desenvolvimento de Sistemas (ADS) [cite: 3]
-> [cite_start]**Disciplina:** Programação Orientada a Objetos [cite: 4]
-> [cite_start]**Professor:** Ely [cite: 5]
+**Instituição:** Instituto Federal de Educação, Ciência e Tecnologia do Piauí (IFPI)
+**Curso:** Análise e Desenvolvimento de Sistemas (ADS)
+**Disciplina:** Programação Orientada a Objetos
+**Professor:** Ely
 
 ---
 

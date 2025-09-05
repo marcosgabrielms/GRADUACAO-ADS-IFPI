@@ -1,9 +1,10 @@
 # Exercício 01 (Extra) - Programação Orientada a Objetos
 
-**Instituição:** Instituto Federal de Educação, Ciência e Tecnologia do Piauí (IFPI)
-**Curso:** Análise e Desenvolvimento de Sistemas (ADS)
-**Disciplina:** Programação Orientada a Objetos
-**Professor:** Ely
+**Instituição:** Instituto Federal de Educação, Ciência e Tecnologia do Piauí (IFPI) <br>
+**Curso:** Análise e Desenvolvimento de Sistemas (ADS) <br>
+**Disciplina:** Programação Orientada a Objetos <br>
+**Professor:** Ely Miranda <br>
+**Aluno:** Marcos Gabriel Mendes Silva
 
 ---
 

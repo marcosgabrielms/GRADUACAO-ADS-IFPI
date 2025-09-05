@@ -1,0 +1,17 @@
+@startuml questao10
+title Questão 10 - Diagramas UML
+
+' Classe Círculo
+class Circulo {
+  - raio: float
+  + calcularArea(): float
+  + calcularPerimetro(): float
+}
+
+' Classe SituaçãoFinanceira
+class SituacaoFinanceira {
+  - valorCreditos: float
+  - valorDebitos: float
+  + calcularSaldo(): float
+}
+@enduml
